@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketoff - CCSHOP</title>
+  <!-- Polices Google : Outfit + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#050913] text-slate-200 min-h-screen font-sans antialiased py-12 px-4 sm:px-6 lg:px-8">
+
+  <!-- NAVIGATION -->
+  <nav class="max-w-6xl mx-auto flex items-center justify-between pb-8 mb-10 border-b border-slate-800/80">
+    <div class="font-display text-2xl font-black tracking-wider text-white uppercase">
+      Marketoff
+    </div>
+    <div class="flex items-center gap-3 text-xs font-semibold">
+      <a href="https://t.me/CanalMarkettoff" target="_blank" class="px-4 py-2 rounded-lg bg-[#0c1322] border border-slate-800 hover:border-cyan-500/50 text-slate-300 transition">
+        Canal Telegram
+      </a>
+      <a href="https://t.me/markettoff" target="_blank" class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition">
+        @markettoff
+      </a>
+    </div>
+  </nav>
+
+  <!-- TITRE -->
+  <header class="max-w-3xl mx-auto text-center mb-12 space-y-3">
+    <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+      CCSHOP Marketoff
+    </h1>
+    <p class="text-slate-400 text-sm font-medium">
+      Cartes verifiees et garanties. Contact direct sur Telegram pour commander.
+    </p>
+  </header>
+
+  <!-- GRILLE DES 4 OFFRES -->
+  <main class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
+
+      <!-- 1. CLASSIQUE (50 €) -->
+      <div class="bg-[#090f1d] border border-slate-800/90 hover:border-cyan-500/40 rounded-xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="font-display text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Classique
+          </div>
+          <div class="font-display text-4xl font-black text-white mb-5">
+            50€
+          </div>
+
+          <!-- SOLDE DISPONIBLE -->
+          <div class="mb-5 p-3 rounded-lg bg-cyan-950/30 border border-cyan-500/20">
+            <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Solde compris entre</div>
+            <div class="font-display text-xl font-extrabold text-cyan-300 tracking-tight mt-0.5">
+              350€ - 450€
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-xs text-slate-300 mb-6 font-medium">
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Carte verifiee et valide</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Infos completes (num, date, cvv)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Support via @markettoff</span>
+            </li>
+          </ul>
+        </div>
+
+        <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20commander%20une%20carte%20Classique%20%C3%A0%2050%E2%82%AC" target="_blank" class="w-full py-2.5 rounded-lg border border-cyan-500/40 hover:bg-cyan-500 hover:text-slate-950 text-cyan-300 font-bold text-xs text-center transition">
+          Commander Classique
+        </a>
+      </div>
+
+      <!-- 2. GOLD (100 €) -->
+      <div class="bg-[#0c1527] border-2 border-cyan-400 rounded-xl p-6 flex flex-col justify-between shadow-xl shadow-cyan-950/50 relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-400 text-slate-950 font-display text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full">
+          Populaire
+        </div>
+
+        <div>
+          <div class="font-display text-xs font-bold uppercase tracking-wider text-cyan-300 mb-2 mt-1">
+            Gold
+          </div>
+          <div class="font-display text-4xl font-black text-white mb-5">
+            100€
+          </div>
+
+          <!-- SOLDE DISPONIBLE -->
+          <div class="mb-5 p-3 rounded-lg bg-cyan-500/10 border border-cyan-400/40">
+            <div class="text-[10px] uppercase font-bold text-cyan-400 tracking-wider">Solde compris entre</div>
+            <div class="font-display text-xl font-extrabold text-cyan-300 tracking-tight mt-0.5">
+              450€ - 550€
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-xs text-slate-200 mb-6 font-medium">
+            <li class="flex items-start gap-2 font-semibold text-white">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Carte Gold haute qualite</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Infos completes + tel</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Assistance prioritaire 7j/7</span>
+            </li>
+          </ul>
+        </div>
+
+        <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20commander%20une%20carte%20Gold%20%C3%A0%20100%E2%82%AC" target="_blank" class="w-full py-2.5 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs text-center transition">
+          Commander Gold
+        </a>
+      </div>
+
+      <!-- 3. BUSINESS (200 €) -->
+      <div class="bg-[#090f1d] border border-slate-800/90 hover:border-cyan-500/40 rounded-xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="font-display text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+            Business
+          </div>
+          <div class="font-display text-4xl font-black text-white mb-5">
+            200€
+          </div>
+
+          <!-- SOLDE DISPONIBLE -->
+          <div class="mb-5 p-3 rounded-lg bg-cyan-950/30 border border-cyan-500/20">
+            <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Solde compris entre</div>
+            <div class="font-display text-xl font-extrabold text-cyan-300 tracking-tight mt-0.5">
+              800€ - 1000€
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-xs text-slate-300 mb-6 font-medium">
+            <li class="flex items-start gap-2 font-semibold text-white">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Carte Business premium</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Full infos + documents</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Plafonds eleves</span>
+            </li>
+          </ul>
+        </div>
+
+        <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20commander%20une%20carte%20Business%20%C3%A0%20200%E2%82%AC" target="_blank" class="w-full py-2.5 rounded-lg border border-cyan-500/40 hover:bg-cyan-500 hover:text-slate-950 text-cyan-300 font-bold text-xs text-center transition">
+          Commander Business
+        </a>
+      </div>
+
+      <!-- 4. AMERICAN EXPRESS (500 €) -->
+      <div class="bg-[#090f1d] border border-cyan-500/50 hover:border-cyan-400 rounded-xl p-6 flex flex-col justify-between transition">
+        <div>
+          <div class="font-display text-xs font-bold uppercase tracking-wider text-cyan-400 mb-2">
+            American Express
+          </div>
+          <div class="font-display text-4xl font-black text-white mb-5">
+            500€
+          </div>
+
+          <!-- SOLDE DISPONIBLE -->
+          <div class="mb-5 p-3 rounded-lg bg-cyan-950/30 border border-cyan-400/30">
+            <div class="text-[10px] uppercase font-bold text-cyan-400 tracking-wider">Solde compris entre</div>
+            <div class="font-display text-xl font-extrabold text-cyan-300 tracking-tight mt-0.5">
+              2000€ - 3000€
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-xs text-slate-200 mb-6 font-medium">
+            <li class="flex items-start gap-2 font-semibold text-white">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Amex haut de gamme</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Fullz complets garantis</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-cyan-400 font-bold">•</span>
+              <span>Contact direct 24/7</span>
+            </li>
+          </ul>
+        </div>
+
+        <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20commander%20une%20carte%20American%20Express%20%C3%A0%20500%E2%82%AC" target="_blank" class="w-full py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs text-center transition">
+          Commander Amex
+        </a>
+      </div>
+
+    </div>
+
+    <!-- SECTION MOYENS DE PAIEMENT (PCS UNIQUEMENT) -->
+    <div class="mt-12">
+      <h2 class="font-display text-xl font-bold text-white mb-6 text-center uppercase tracking-wider">
+        Moyen de Paiement Accepte
+      </h2>
+      <div class="bg-[#090f1d] border border-slate-800/90 rounded-xl p-6 max-w-2xl mx-auto">
+        <div class="text-center mb-6">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-500/20 border border-cyan-500/50 mb-4">
+            <span class="text-cyan-400 font-display font-black text-2xl">PCS</span>
+          </div>
+          <h3 class="font-display text-lg font-bold text-white">Recharges PCS uniquement</h3>
+          <p class="text-xs text-slate-400 mt-2">Tickets recharge avec code a 10 chiffres</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- Option 1 -->
+          <a href="https://www.recharge.fr" target="_blank" class="flex flex-col items-center p-4 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800 transition group">
+            <i class="fa-solid fa-globe text-cyan-400 text-xl mb-2 group-hover:scale-110 transition"></i>
+            <span class="font-display text-sm font-bold text-white">recharge.fr</span>
+            <span class="text-[10px] text-slate-400 mt-1">En ligne</span>
+          </a>
+          
+          <!-- Option 2 -->
+          <a href="https://www.eneba.com/fr/pcs-pcs-mastercard-100-eur-voucher-france" target="_blank" class="flex flex-col items-center p-4 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800 transition group">
+            <i class="fa-solid fa-gamepad text-cyan-400 text-xl mb-2 group-hover:scale-110 transition"></i>
+            <span class="font-display text-sm font-bold text-white">eneba.fr</span>
+            <span class="text-[10px] text-slate-400 mt-1">En ligne</span>
+          </a>
+          
+          <!-- Option 3 -->
+          <div class="flex flex-col items-center p-4 rounded-lg bg-slate-800/50 border border-slate-700">
+            <i class="fa-solid fa-store text-cyan-400 text-xl mb-2"></i>
+            <span class="font-display text-sm font-bold text-white">Bureau de tabac</span>
+            <span class="text-[10px] text-slate-400 mt-1">Physique</span>
+          </div>
+        </div>
+        
+        <div class="mt-6 p-4 rounded-lg bg-cyan-950/30 border border-cyan-500/20">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-info text-cyan-400 mt-0.5"></i>
+            <div class="text-xs text-slate-300">
+              <strong class="text-white">Comment ca marche :</strong> Achetez un ticket PCS (20€ a 250€), grattez pour reveler le code a 10 chiffres, et envoyez-le a @markettoff avec votre commande.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION TECH -->
+    <div class="mt-12">
+      <h2 class="font-display text-xl font-bold text-white mb-6 text-center uppercase tracking-wider">
+        Section Tech
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+
+        <!-- Amazon Tech -->
+        <div class="bg-[#090f1d] border border-slate-800/90 hover:border-cyan-500/40 rounded-xl p-6 text-center transition">
+          <div class="font-display text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">
+            Amazon Tech
+          </div>
+          <div class="font-display text-3xl font-black text-white mb-4">
+            20€
+          </div>
+          <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20acheter%20Amazon%20Tech%20%C3%A0%2020%E2%82%AC" target="_blank" class="w-full py-2 rounded-lg border border-cyan-500/40 hover:bg-cyan-500 hover:text-slate-950 text-cyan-300 font-bold text-xs text-center block transition">
+            Acheter
+          </a>
+        </div>
+
+        <!-- Uber Eats Tech -->
+        <div class="bg-[#090f1d] border border-slate-800/90 hover:border-cyan-500/40 rounded-xl p-6 text-center transition">
+          <div class="font-display text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">
+            Uber Eats Tech
+          </div>
+          <div class="font-display text-3xl font-black text-white mb-4">
+            20€
+          </div>
+          <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20acheter%20Uber%20Eats%20Tech%20%C3%A0%2020%E2%82%AC" target="_blank" class="w-full py-2 rounded-lg border border-cyan-500/40 hover:bg-cyan-500 hover:text-slate-950 text-cyan-300 font-bold text-xs text-center block transition">
+            Acheter
+          </a>
+        </div>
+
+        <!-- Verif Tech -->
+        <div class="bg-[#0c1527] border-2 border-cyan-400 rounded-xl p-6 text-center shadow-xl shadow-cyan-950/50">
+          <div class="font-display text-sm font-bold uppercase tracking-wider text-cyan-300 mb-3">
+            Verif Tech
+          </div>
+          <div class="font-display text-3xl font-black text-white mb-4">
+            200€
+          </div>
+          <a href="https://t.me/markettoff?text=Bonjour,%20je%20souhaite%20acheter%20Verif%20Tech%20%C3%A0%20200%E2%82%AC" target="_blank" class="w-full py-2 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs text-center block transition">
+            Acheter
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT BAS DE PAGE -->
+    <div class="mt-12 p-6 rounded-xl bg-[#090f1d] border border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <div class="font-display text-sm font-bold text-white">Une question avant de commander ?</div>
+        <div class="text-xs text-slate-400 mt-0.5 font-medium">Ecrivez directement a @markettoff sur Telegram.</div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://t.me/CanalMarkettoff" target="_blank" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 transition">
+          Canal Telegram
+        </a>
+        <a href="https://t.me/markettoff" target="_blank" class="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-xs font-bold text-slate-950 transition">
+          Contacter @markettoff
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-12 text-center text-xs text-slate-600 font-medium">
+    Marketoff — CCSHOP — Telegram: @markettoff
+  </footer>
+
+</body>
+</html>
